@@ -2,7 +2,7 @@
 
 - **Título del taller:** "Taller de git"
 - **Descripción:** charla introductoria a git apuntada a gente que no conoce sistemas de control de versiones.
-- *8Objetivos de aprendizaje:**
+- **Objetivos de aprendizaje:**
 
 
 - **Duración estimada:** entre 60 y 90 minutos, dependiendo de los inconvenientes que encuentren los participantes al introducir los comandos.
@@ -19,3 +19,5 @@
 - **Guión del taller:**
 
 **Nota para los organizadores:** me enteré hace poco del evento y comencé a preparar esta charla en mis tiempos libres, dado que vi que bastantes personas en el grupo de WhatsApp de MEGA no conocen Git. He creado un temario preliminar, sin embargo apenas he empezado a desarrollar algunos temas, por lo cual no tengo idea de los tiempos que llevará cada sección. De hecho, la estimación que puse más arriba es totalmente inventada. A medida que desarrolle los temas iré evaluando los tiempos y espero poder darles una versión revisada del temario antes de que empiece el evento.
+
+El guión del taller se encuentra en el archivo: `temario.pdf`.
