@@ -5,7 +5,7 @@
 ## Estados en git
 ## Archivos de texto vs binarios
 ## Manos a la obra
-### Convenciones
+### Convenciones al describir comandos
 ### Ahora sí
 
 - instalación
@@ -26,9 +26,9 @@
 ## Deshacer cosas
 
 - cambiar el mensaje de un commit
-- modificar lo que se ha agregado al stage
+- modificar lo que se ha agregado al área de staging
 - descartar cambios en un archivo
-- tirar los últimos cambios a la basura
+- descartar todos los cambios en todos los archivos modificados
 
 ## Trabajo en equipo
 
@@ -41,9 +41,11 @@
 
 ## Cheatsheet
 
-## Bonus track (Si sobra tiempo)
+## Bonus track (si sobra tiempo)
 
 - ignorar archivos o directorios que no queremos versionar
+- aceptar ciertos archivos en una carpeta ignorada
 - configuración: alias
-- tagueado
+- tagueado, versionado
 - ¿qué hacer cuando hay conflictos entre ramas?
+- rebase: ¿qué es? ¿para qué sirve? (dos posibles usos)
