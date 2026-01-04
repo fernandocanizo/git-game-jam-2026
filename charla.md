@@ -9,34 +9,61 @@
 - Quiénes ya conocen y han usado git?
   Esta pregunta me puede servir para omitir algunos temas, como por ejemplo instalación y setup inicial.
 
-## Tutorial / taller
+## Qué es git?
 
-### Qué es git?
+Git es un sistema de control de versiones distribuido. Permite llevar un
+registro detallado de los cambios realizados en el código fuente de un proyecto
+a lo largo del tiempo. Cada copia local del proyecto, conocida como
+repositorio, contiene el historial completo, lo que permite trabajar sin
+conexión. 
 
-Git es una herramienta que guarda localmente la historia de un trabajo, armando
-en el proceso un versionado natural.
-
-Recuerda absolutamente todos los cambios producidos en una obra, desde el
-inicio. Es una memoria externa que registra cómo fue evolucionando la obra.
-
-Eso permite volver atrás, comparar versiones y probar ideas nuevas sin miedo a
-romper lo que existe.
+Con git se puede volver a una versión anterior del proyecto, comparar y probar
+ideas nuevas sin miedo a romper lo que existe.
 
 ## Por qué necesitamos control de versiones?
 
-Todos hemos lidiado con el problema de versionar un trabajo cuando no estamos seguros de si realmente querremos mantener los cambios que hacemos o si tal vez deseemos volver a una versión anterior. Y aunque no nos interese mantener versiones, aún si estamos seguros que lo último que hicimos es lo que queremos entregar, queda el asunto de la nomenclatura de archivos: cómo se entera la persona a quien le entregamos, por ejemplo, un compañero, si es un trabajo conjunto, o el profesor si es un entregable del colegio o la facultad, que tal o cual archivo es el que corresponde usar para continuar el trabajo o para evaluar?
+### ¿Cuál es el archivo a entregar?
 
-Posiblemente todos hayan pasado por la calamidad de creer que ya tenemos la versión final de algo, y luego hay que hacer un "último" cambio, y luego otro "último" cambio, y así nos quedamos con nombres de archivos como:
+```
+$ ls -1
+proyecto.final.txt
+proyecto.final2.txt
+proyecto.final-final.txt
+proyecto.txt
+proyecto-2026.01.30.txt
+```
 
-- proyecto.final
-- proyecto.final2
-- proyecto.final-final
-- proyecto.final-final-otro
-- ...
+### ¿Y ahora?
+```
+$ ls -1
+proyecto-2026.01.30.txt
+proyecto.txt
+proyecto.final.txt
+proyecto.final-final.txt
+proyecto.final2.txt
+```
 
-Y esta nomenclatura no tiene sentido. Cuál es el último?
+### Código deshabilitado vía comentario
 
-### Estados en git
+### ¿Qué hacemos si queremos recuperar una versión anterior y ya la hemos borrado?
+
+### La memoria humana es frágil
+
+El control de versiones:
+- guarda decisiones
+- registra intentos
+- conserva caminos descartados
+- registra metainformación, por ejemplo:
+
+  "¿Por qué se cambió esto y por qué se hizo así?"
+
+### Equivocarse no debería ser catastrófico
+
+### Irremplazable si se trabaja en equipo
+
+### Respaldo automático
+
+## Estados en git
 
 - **modificado:** se ha cambiado algo en el archivo, pero no se ha comiteado aún.
 
@@ -48,18 +75,24 @@ Y esta nomenclatura no tiene sentido. Cuál es el último?
 
 ![areas](/home/flc/Dropbox/my/cv/talks/2026.01.02,git-game.jam.2026/img/areas.png)
 
-### Archivos de texto vs binario
+## Archivos de texto vs binario
 
-La distinción entre archivo binarios o de texto es semántica, no física. A nivel físico todos los archivos son binarios.
+La distinción entre archivo binarios o de texto es semántica, no física. A
+nivel físico todos los archivos son binarios.
 
-No existe un método 100% seguro para determinar cual es cual, digamos, para explicarle a una máquina cual es cual y hacer que los identifique automáticamente, pero para un humano es bastante fácil: si podemos leerlo, aunque no entendamos lo que dice o lo que hace, es de texto. Y si vemos un montón de caracteres locos sin sentido, es binario.
+No existe un método 100% seguro para determinar cual es cual, digamos, para
+explicarle a una máquina cual es cual y hacer que los identifique
+automáticamente, pero para un humano es bastante fácil: si podemos leerlo,
+aunque no entendamos lo que dice o lo que hace, es de texto. Y si vemos un
+montón de caracteres locos sin sentido, es binario.
 
-#### Mostrar distintos archivos con vi o less
+### Veamos algunos archivos...
 
-- /usr/share/wallpapers
-- /etc/
-- /usr/share/man/**/*.gz
-  Acá, como son archivos comprimidos, tenemos las dos versiones del mismo contenido. Mostrar en crudo y con zless.
+- less /usr/share/wallpapers
+- less /etc/inputrc
+- less /usr/share/man/man7/address_families.7.gz
+- zless /usr/share/man/man7/address_families.7.gz
+- man address_families
 
 Esta distinción es importante para entender como funciona git debido a que git está pensado para trabajar con archivos de texto, guardando las diferencias que se producen línea a línea entre las distintas versiones de un archivo. Esas diferencias es lo que git guarda en su base de datos.
 
@@ -75,24 +108,118 @@ este caso un archivo. `comando [archivo]` un texto entre corchetes indica que
 el comando soporta opcionalmente que se le pase un parámetro, pero no es
 obligatorio dárselo.
 
-### Ahora sí
+### Instalación
 
-- instalación
-- configuración
-- git init / git clone (lo veremos más adelante)
-  Dos maneras de iniciar un repositorio para comenzar a trabajar.
-- git add, git commit
-  - Atajo: git commit -p
-  - importancia del nombrado de commits
-  - importancia de la separación de tareas
-- git status
-- git log
-- ramas: para qué se usan y cómo
+### Configuración
 
-## Explorar alternativas
+```
+git config --global user.name "Tu nombre"
+git config --global user.email "ejemplo@email.com"
+```
 
-- git checkout -b
-- git cherry-pick
+### Dos maneras de iniciar un repositorio para comenzar a trabajar
+
+```
+git init
+```
+
+```
+git clone <uri>
+```
+
+### Agregar archivos al repositorio y ver estado del mismo
+
+```
+vi uno
+git add uno
+git status
+git commit
+git status
+```
+
+### Ver cambios no comiteados
+
+```
+vi uno
+git status
+git diff
+```
+
+### Atajo para decidir que incluir
+
+```
+git commit -p
+```
+
+### Importancia del nombrado de commits
+
+### Importancia de la separación de tareas
+
+### ¿Qué hemos hecho?
+
+```
+git log
+git log -p
+```
+
+### Veamos los cambios ocurridos en un sólo archivo
+
+```
+vi dos
+git add dos
+git commit
+git log -p
+git log -p -- uno
+```
+
+### Ramas: ¿qué son?
+
+Las ramas son líneas de trabajo paralelas, versiones alternativas del trabajo.
+
+### Ramas: ¿para qué se usan?
+
+Sirven para:
+
+- experimentar sin riesgo
+- trabajar en una característica sin afectar el funcionamiento actual del proyecto
+- permitir que varias personas trabajen a la vez
+
+### Ramas: ¿cómo?
+
+```
+# git branch
+git checkout -b mi-rama
+# git branch
+vi tres
+git add tres
+git commit
+# git log
+```
+
+### Incorporar los cambios de una rama
+
+```
+git checkout main
+# git log
+git merge mi-rama
+# git log
+```
+
+### Incorporar sólo algunos cambios de otra rama
+
+```
+git checkout -b otra-rama
+touch cuatro cinco seis
+git add cuatro
+git commit
+git add cinco
+git commit
+git add seis
+git commit
+git log
+git checkout main
+git cherry-pick <sha copiado de git log>
+```
 
 ## Deshacer cosas
 
