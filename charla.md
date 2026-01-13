@@ -1,3 +1,7 @@
+![qr-code](./img/talk-repo-qr-code.png)
+
+---
+
 ## Preguntas antes de comenzar
 
 * Levanten la mano quienes usan Windows
