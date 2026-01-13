@@ -1,24 +1,39 @@
-# Temario
+## Preguntas antes de comenzar
 
-## Preguntas para conocer a mi público
+* Levanten la mano quienes usan Windows
+* Levanten la mano quienes usan Linux o similar: BSD, Mac, Unix.
+* ¿Alguno ya ha usado git?
+* Levanten la mano quienes programan
+* Levanten la mano quienes diseñan, dibujan o hacen arte en general
+* Levanten la mano los que no levantaron la mano
 
-- Qué sistema operativo usan?
-  Si hay gente con Linux, la charla puede ser tipo taller y los oyentes podrían seguirme en lo que hago.
-  Si no, entonces será una charla informativa más que nada y habrá que restarle énfasis a los ejemplos.
-
-- Quiénes ya conocen y han usado git?
-  Esta pregunta me puede servir para omitir algunos temas, como por ejemplo instalación y setup inicial.
-
+---
 ## Qué es git?
 
-Git es un sistema de control de versiones distribuido. Permite llevar un
-registro detallado de los cambios realizados en el código fuente de un proyecto
-a lo largo del tiempo. Cada copia local del proyecto, conocida como
-repositorio, contiene el historial completo, lo que permite trabajar sin
-conexión. 
+* Git es un sistema de control de versiones distribuido.
+
+* Permite llevar un registro de los cambios realizados en el código fuente de un proyecto.
+
+* Cada copia local del proyecto, se conoce como **repositorio**.
+  (**repo** para los amigos).
+
+* El repositorio contiene el historial completo, lo que permite trabajar sin
+  conexión (SVN).
+
+---
+
+## Más sencillo
+
+Git es una máquina del tiempo.
 
 Con git se puede volver a una versión anterior del proyecto, comparar y probar
 ideas nuevas sin miedo a romper lo que existe.
+
+---
+
+## Por qué necesitamos control de versiones?
+
+---
 
 ## Por qué necesitamos control de versiones?
 
@@ -32,6 +47,9 @@ proyecto.final-final.txt
 proyecto.txt
 proyecto-2026.01.30.txt
 ```
+---
+
+## Por qué necesitamos control de versiones?
 
 ### ¿Y ahora?
 ```
@@ -43,50 +61,56 @@ proyecto.final-final.txt
 proyecto.final2.txt
 ```
 
-### Código deshabilitado vía comentario
+---
 
-### ¿Qué hacemos si queremos recuperar una versión anterior y ya la hemos borrado?
+## Por qué necesitamos control de versiones?
 
 ### La memoria humana es frágil
 
-El control de versiones:
-- guarda decisiones
-- registra intentos
-- conserva caminos descartados
-- registra metainformación, por ejemplo:
+El control de versiones registra metainformación, por ejemplo:
 
-  "¿Por qué se cambió esto y por qué se hizo así?"
+* guarda decisiones
+  _¿Por qué se modificó esto?_ _¿Por qué se hizo de tal manera?_
+* registra intentos
+  _Usé la biblioteca A, pero no funcionó, entonces cambié a B._
+* conserva caminos descartados
+  _Los usuarios estaban más contentos con la vieja manera de calcular puntaje_.
 
-### Equivocarse no debería ser catastrófico
+---
 
-### Irremplazable si se trabaja en equipo
+## Por qué necesitamos control de versiones?
 
-### Respaldo automático
+* Código deshabilitado vía comentario
+* ¿Qué hacemos si queremos recuperar una versión anterior y ya la hemos borrado?
+* Equivocarse no debería ser catastrófico
+* Irremplazable si se trabaja en equipo
+* Respaldo automático
+
+---
 
 ## Estados en git
 
-- **modificado:** se ha cambiado algo en el archivo, pero no se ha comiteado aún.
+* **committed:** los cambios han sido guardados en la base de datos local de git.
 
-- **staged:** indica que has marcado un archivo modificado para sumarlo al próximo comit.
+* **modificado:** se ha cambiado algo, pero no se ha comiteado aún.
 
-- **committed:** los cambios han sido guardados en la base de datos local de git.
+* **staged:** indica que has marcado ciertos cambios para sumarlos al próximo comit.
 
-(Voy a usar los términos en inglés, para mí no tiene sentido traducirlos)
+___
 
-![areas](/home/flc/Dropbox/my/cv/talks/2026.01.02,git-game.jam.2026/img/areas.png)
+![areas](./img/areas.png)
+___
 
 ## Archivos de texto vs binario
 
-La distinción entre archivo binarios o de texto es semántica, no física. A
-nivel físico todos los archivos son binarios.
+* ¿Alguien me puede dar una definición?
 
-No existe un método 100% seguro para determinar cual es cual, digamos, para
-explicarle a una máquina cual es cual y hacer que los identifique
-automáticamente, pero para un humano es bastante fácil: si podemos leerlo,
-aunque no entendamos lo que dice o lo que hace, es de texto. Y si vemos un
-montón de caracteres locos sin sentido, es binario.
+* La distinción entre archivo binarios o de texto es semántica, no física.
+  **A nivel físico todos los archivos son binarios**.
 
-### Veamos algunos archivos...
+---
+
+### Veamos algunos ejemplos...
 
 - less /usr/share/wallpapers
 - less /etc/inputrc
@@ -94,21 +118,22 @@ montón de caracteres locos sin sentido, es binario.
 - zless /usr/share/man/man7/address_families.7.gz
 - man address_families
 
-Esta distinción es importante para entender como funciona git debido a que git está pensado para trabajar con archivos de texto, guardando las diferencias que se producen línea a línea entre las distintas versiones de un archivo. Esas diferencias es lo que git guarda en su base de datos.
-
-Mientras que cuando agregamos un archivo binario al repositorio, git no tiene manera de definir qué cambió, sólo sabe que ha sido modificado. Por lo tanto guarda el archivo completo en cada versión, lo cual es un tema a considerar cuando tenemos un repositorio de larga vida con muchos archivos binarios o bien muchas versiones de archivos binarios muy grandes.
+---
 
 ## Manos a la obra
 
-### Antes de empezar
+### Convención
 
-Convención para la escritura de comandos: `comando <archivo>` un texto entre
-símbolos menor y mayor indica que al comando se le debe pasar un parámetro, en
-este caso un archivo. `comando [archivo]` un texto entre corchetes indica que
-el comando soporta opcionalmente que se le pase un parámetro, pero no es
-obligatorio dárselo.
+* `comando <archivo>` ⟶  **parámetro requerido**
+* `comando [archivo]` ⟶  **parámetro optativo**.
+
+---
 
 ### Instalación
+
+Nope!
+
+---
 
 ### Configuración
 
@@ -117,25 +142,26 @@ git config --global user.name "Tu nombre"
 git config --global user.email "ejemplo@email.com"
 ```
 
-### Dos maneras de iniciar un repositorio para comenzar a trabajar
+---
+
+### Dos maneras de iniciar un repositorio
+
+* git init
+* git clone <uri>
+
+---
+
+### Agregar archivos, ver estado
 
 ```
-git init
-```
-
-```
-git clone <uri>
-```
-
-### Agregar archivos al repositorio y ver estado del mismo
-
-```
-vi uno
+vi uno # editamos...
 git add uno
 git status
 git commit
 git status
 ```
+
+---
 
 ### Ver cambios no comiteados
 
@@ -145,15 +171,23 @@ git status
 git diff
 ```
 
+---
+
 ### Atajo para decidir que incluir
 
 ```
 git commit -p
 ```
 
+---
+
 ### Importancia del nombrado de commits
 
+---
+
 ### Importancia de la separación de tareas
+
+---
 
 ### ¿Qué hemos hecho?
 
@@ -161,6 +195,8 @@ git commit -p
 git log
 git log -p
 ```
+
+---
 
 ### Veamos los cambios ocurridos en un sólo archivo
 
@@ -172,17 +208,21 @@ git log -p
 git log -p -- uno
 ```
 
+---
+
 ### Ramas: ¿qué son?
 
-Las ramas son líneas de trabajo paralelas, versiones alternativas del trabajo.
+* Las ramas son líneas de trabajo paralelas, versiones alternativas del trabajo.
+
+---
 
 ### Ramas: ¿para qué se usan?
 
-Sirven para:
+* experimentar sin riesgo
+* trabajar en una característica sin afectar el funcionamiento actual del proyecto
+* permitir que varias personas trabajen a la vez
 
-- experimentar sin riesgo
-- trabajar en una característica sin afectar el funcionamiento actual del proyecto
-- permitir que varias personas trabajen a la vez
+---
 
 ### Ramas: ¿cómo?
 
@@ -196,7 +236,9 @@ git commit
 # git log
 ```
 
-### Incorporar los cambios de una rama
+---
+
+### Ramas: integrar todos los cambios de una rama
 
 ```
 git checkout main
@@ -205,7 +247,23 @@ git merge mi-rama
 # git log
 ```
 
-### Incorporar sólo algunos cambios de otra rama
+---
+
+### Ramas: eliminar
+
+```
+git branch -d mi-rama
+```
+
+Forzar eliminación:
+
+```
+git branch -D mi-rama
+```
+
+---
+
+### Ramas: incorporar sólo algunos cambios de otra rama
 
 ```
 git checkout -b otra-rama
@@ -221,17 +279,21 @@ git checkout main
 git cherry-pick <sha copiado de git log>
 ```
 
+---
+
 ## Deshacer cosas
 
-- git commit --amend
+* `git commit --amend`
+* `git restore`
+* `git reset`
+* para cambios staged:
+  `git reset HEAD [archivo]` / `git restore --staged <archivo>`
+* para cambios aún no staged:
+  `git checkout -- <archivo>` / `git restore <archivo>`
+* tirar los últimos cambios a la basura:
+  `git reset --hard HEAD`
 
-- git restore
-- git reset
-- para cambios staged:
-  git reset HEAD [archivo] / git restore --staged <archivo>
-- para cambios aún no staged:
-  git checkout -- <archivo> / git restore <archivo>
-- tirar los últimos cambios a la basura: git reset --hard HEAD
+---
 
 ## Trabajo en equipo
 
