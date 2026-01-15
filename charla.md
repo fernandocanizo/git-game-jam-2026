@@ -278,6 +278,7 @@ git config --global user.email "ejemplo@email.com"
 
 ### Ramas: ¿cómo?
 
+* `git branch`
 * `git branch -c [base] <new branch>` and `git checkout <new branch>`
 * `git checkout -b mi-rama`
 * `git branch`
