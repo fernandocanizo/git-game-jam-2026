@@ -245,10 +245,8 @@ git config --global user.email "ejemplo@email.com"
 
 ### ¿Qué hemos hecho?
 
-```
-git log
-git log -p
-```
+* `git log`
+* `git log -p`
 
 ---
 
