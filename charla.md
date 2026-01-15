@@ -210,31 +210,25 @@ git config --global user.email "ejemplo@email.com"
 
 ### Agregar archivos, ver estado
 
-```
-vi uno # editamos...
-git add uno
-git status
-git commit
-git status
-```
+* `vi uno` # editamos...
+* `git add uno`
+* `git status`
+* `git commit`
+* `git status`
 
 ---
 
 ### Ver cambios no comiteados
 
-```
-vi uno
-git status
-git diff
-```
+* `vi uno`
+* `git status`
+* `git diff`
 
 ---
 
 ### Atajo para decidir que incluir
 
-```
-git commit -p
-```
+* `git commit -p`
 
 ---
 
