@@ -278,58 +278,45 @@ git config --global user.email "ejemplo@email.com"
 
 ### Ramas: ¿cómo?
 
-```
-# git branch
-git checkout -b mi-rama
-# git branch
-vi tres
-git add tres
-git commit
-# git log
-```
+* `git branch -c [base] <new branch>` and `git checkout <new branch>`
+* `git checkout -b mi-rama`
+* `git branch`
+* `vi tres`
+* `git add tres`
+* `git commit`
+* `git log`
 
 ---
 
 ### Ramas: integrar todos los cambios de una rama
 
-```
-git checkout main
-# git log
-git merge mi-rama
-# git log
-```
+* `git checkout main`
+* `git log`
+* `git merge mi-rama`
+* `git log`
 
 ---
 
 ### Ramas: eliminar
 
-```
-git branch -d mi-rama
-```
-
-Forzar eliminación:
-
-```
-git branch -D mi-rama
-```
+* Si no hay cambios no mergeados: git branch -d mi-rama
+* Si queremos forzar descarte: git branch -D mi-rama
 
 ---
 
 ### Ramas: incorporar sólo algunos cambios de otra rama
 
-```
-git checkout -b otra-rama
-touch cuatro cinco seis
-git add cuatro
-git commit
-git add cinco
-git commit
-git add seis
-git commit
-git log
-git checkout main
-git cherry-pick <sha copiado de git log>
-```
+* `git checkout -b otra-rama`
+* `touch cuatro cinco seis`
+* `git add cuatro`
+* `git commit`
+* `git add cinco`
+* `git commit`
+* `git add seis`
+* `git commit`
+* `git log`
+* `git checkout main`
+* `git cherry-pick <sha copiado de git log>`
 
 ---
 
