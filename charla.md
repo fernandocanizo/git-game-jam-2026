@@ -203,8 +203,8 @@ git config --global user.email "ejemplo@email.com"
 
 ### Dos maneras de iniciar un repositorio
 
-* git init
-* git clone <uri>
+* `git clone <uri>`
+* `mkdir taller-git; cd taller-git; git init`
 
 ---
 
