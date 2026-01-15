@@ -300,8 +300,8 @@ git config --global user.email "ejemplo@email.com"
 
 ### Ramas: eliminar
 
-* Si no hay cambios no mergeados: git branch -d mi-rama
-* Si queremos forzar descarte: git branch -D mi-rama
+* Si no hay cambios no mergeados: `git branch -d mi-rama`
+* Si queremos forzar descarte: `git branch -D mi-rama`
 
 ---
 
