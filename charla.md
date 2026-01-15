@@ -1,3 +1,30 @@
+---
+marp: true
+style: |
+  section.title-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* vertical */
+    align-items: center;       /* horizontal */
+    text-align: center;
+  }
+---
+<!-- _class: title-center -->
+
+# Taller de git
+# para videojuegos
+
+---
+<!-- _class: title-center -->
+
+# Taller de git
+# ~~para videojuegos~~
+
+---
+<!-- _class: title-center -->
+
+## Por Fernando L. Canizo (aka Conan)
+
 ![qr-code](./img/talk-repo-qr-code.png)
 
 ---
@@ -345,3 +372,11 @@ Si estamos viendo esto, es porque sobró tiempo ;)
 - configuración: alias
 - tagueado
 - mergetool
+
+---
+<!-- _class: title-center -->
+
+## Muchas gracias :)
+
+![qr-code](./img/talk-repo-qr-code.png)
+
