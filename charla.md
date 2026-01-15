@@ -252,6 +252,18 @@ git config --global user.email "ejemplo@email.com"
 
 ---
 
+### ¿Qué son esos numerazos?
+
+El hash SHA es la firma criptográfica del commit e incluye:
+
+* el contenido del commit (los cambios)
+* el mensaje del commit
+* los commits padres hasta el inicio de la historia
+* el timestamp
+* algunos metadatos (cuyos detalles no conozco)
+
+---
+
 ### Veamos los cambios ocurridos en un sólo archivo
 
 * `vi dos`
