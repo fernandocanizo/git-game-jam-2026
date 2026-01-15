@@ -252,13 +252,11 @@ git config --global user.email "ejemplo@email.com"
 
 ### Veamos los cambios ocurridos en un sólo archivo
 
-```
-vi dos
-git add dos
-git commit
-git log -p
-git log -p -- uno
-```
+* `vi dos`
+* `git add dos`
+* `git commit`
+* `git log -p`
+* `git log -p -- uno`
 
 ---
 
