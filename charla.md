@@ -21,30 +21,6 @@ style: |
 # ~~para videojuegos~~
 
 ---
-## ¿Para qué se puede usar git?
-
-* **PARA TODO**
-* guardar la configuración de mi entorno de shell y de algunas aplicaciones del mismo
-* guardar la configuración de Neovim, mi editor
-* guardar mis bookmarks
-* guardar mis notas sobre tech stacks
-* guardar cuentos que escribo
-* guardar esta charla
-* repositorio de tips sobre comandos que uso con poca regularidad
-
----
-## Continuación...
-
-* registro de libros que leo
-* registro de mis claves usando la herramienta `pass`
-* repositorio de scripts de shell utilitarios: privados y públicos
-* ideas para juegos
-* revisión de bibliotecas y herramientas
-* repositorios de aprendizaje: siempre que aprendo alguna nueva tecnología o que sigo un tutorial, creo un repositorio
-* mi perfil en github es un repositorio también
-* etc...
-
----
 <!-- _class: title-center -->
 
 ## Por Fernando L. Canizo (aka Conan)
@@ -81,8 +57,10 @@ style: |
 
 Git es una máquina del tiempo.
 
-Con git se puede volver a una versión anterior del proyecto, comparar y probar
-ideas nuevas sin miedo a romper lo que existe.
+* volver atrás
+* comparar
+* probar
+* **sin miedo**
 
 ---
 
@@ -140,6 +118,30 @@ El control de versiones registra metainformación, por ejemplo:
 * Equivocarse no debería ser catastrófico
 * Irremplazable si se trabaja en equipo
 * Respaldo automático
+
+---
+## ¿Para qué se puede usar git?
+
+* **PARA TODO**
+* guardar la configuración de mi entorno de shell y de algunas aplicaciones del mismo
+* guardar la configuración de Neovim, mi editor
+* guardar mis bookmarks
+* guardar mis notas sobre tech stacks
+* guardar cuentos que escribo
+* guardar esta charla
+* repositorio de tips sobre comandos que uso con poca regularidad
+
+---
+## Continuación...
+
+* registro de libros que leo
+* registro de mis claves usando la herramienta `pass`
+* repositorio de scripts de shell utilitarios: privados y públicos
+* ideas para juegos
+* revisión de bibliotecas y herramientas
+* repositorios de aprendizaje: siempre que aprendo alguna nueva tecnología o que sigo un tutorial, creo un repositorio
+* mi perfil en github es un repositorio también
+* etc...
 
 ---
 
