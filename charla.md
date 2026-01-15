@@ -229,6 +229,7 @@ git config --global user.email "ejemplo@email.com"
 ### Atajo para decidir que incluir
 
 * `git commit -p`
+* `git commit -p [archivo] [...]`
 
 ---
 
