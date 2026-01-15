@@ -235,6 +235,8 @@ git config --global user.email "ejemplo@email.com"
 
 ### Importancia del nombrado de commits
 
+* ver log de proyecto real
+
 ---
 
 ### Importancia de la separación de tareas
