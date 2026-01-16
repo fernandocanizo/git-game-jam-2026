@@ -271,7 +271,7 @@ El hash SHA es la firma criptográfica del commit e incluye:
 * `git add dos`
 * `git commit`
 * `git log -p`
-* `git log -p -- uno`
+* `git log -p uno`
 
 ---
 
