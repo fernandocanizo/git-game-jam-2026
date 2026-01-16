@@ -235,6 +235,7 @@ git config --global user.email "ejemplo@email.com"
 
 ### Importancia del nombrado de commits
 
+* ver coloreado en Neovim al commitear
 * ver log de proyecto real
 
 ---
