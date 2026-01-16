@@ -397,10 +397,7 @@ Versión ultra-resumida e incompleta.
 
 ## Interfaces gráficas
 
-Personalmente no uso interfaces gráficas, me resulta mucho más intuitivo trabajar con git desde el shell, sin embargo aquí les menciono algunas para los amantes del mouse:
-
-TODO buscar clientes gráficos de git para linux, windows, mac
-- VSCode (es con plugin o lo tiene nativamente?) TODO
+No uso. Pero hay mogollón.
 
 ---
 
