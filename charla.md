@@ -247,7 +247,7 @@ git config --global user.email "ejemplo@email.com"
 ### ¿Qué hemos hecho?
 
 * `git log`
-* ver archivos involucrados: `git log --raw --no-merges`
+* ver archivos involucrados: `git log --raw --no-merges` (`list-changes`)
 * `git log -p`
 * versión reducida: `git log --oneline`
 
