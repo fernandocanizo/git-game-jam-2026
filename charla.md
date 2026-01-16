@@ -347,28 +347,45 @@ El hash SHA es la firma criptográfica del commit e incluye:
 
 ---
 
-## Trabajo en equipo
+## Trabajo en equipo (Parte 2?)
 
-### GitHub
+### [GitHub](https://github.com/)
 
-- git clone
-- git pull / git fetch
-- git push
-- merge y rebase
+Versión ultra-resumida e incompleta.
+
+* `git clone <uri>`
+* `git checkout dev`
+* `git pull` (`fetch` ?)
+* `git checkout -b nueva-rama-x`
+* work, work, work..., commit, add...
+* `git push`
+
+---
 
 ### Alternativas a GitHub
 
-- gitlab
-- ...
+* [GitLab](https://about.gitlab.com/)
+  Open source, se puede instalar localmente, hay imágenes Docker
 
+* [BitBucket](https://bitbucket.org/)
+
+---
 ## Recursos de aprendizaje
 
-- `git help`, `git help <command>`
-- [Manual](https://git-scm.com/docs/user-manual)
-- [Pro Git Book](https://git-scm.com/book/en/v2) por Scot Chacon y Ben Straub, editorial Apress, bajo una licencia Creative Commons que permite compartirlo y adaptarlo.
-- [Manual en castellano](https://desarrolloweb.com/manuales/manual-de-git.html)
-  Lo encontré buscando recursos para pasarles, no lo he usado, sólo leí los contenidos, pero se ve bastante piola, con artículos específicos que explican tareas específicas que podrían surgir cuando uno usa git.
-- [Oh My Git!](https://ohmygit.org/) (juego)
+* `git help`, `git help <command>`
+
+* [Manual](https://git-scm.com/docs/user-manual)
+
+* [Pro Git Book](https://git-scm.com/book/en/v2) por Scot Chacon y Ben Straub, editorial Apress, bajo una licencia Creative Commons que permite compartirlo y adaptarlo.
+
+* [Manual en castellano](https://desarrolloweb.com/manuales/manual-de-git.html)
+  No lo he usado, leí los contenidos, se ve piola.
+  Artículos para tareas específicas.
+
+* [Oh My Git!](https://ohmygit.org/)
+  Juego.
+
+---
 
 ## Interfaces gráficas
 
@@ -377,22 +394,30 @@ Personalmente no uso interfaces gráficas, me resulta mucho más intuitivo traba
 TODO buscar clientes gráficos de git para linux, windows, mac
 - VSCode (es con plugin o lo tiene nativamente?) TODO
 
-## Cheatsheet
+---
 
-Les describo un posible flujo de trabajo compartido que uso desde hace años en mi trabajo.
+## Cheatsheets
 
-TODO colocar comandos y breve descripción (cuando es la primera vez que aparecen) explicando lo que hace
+* [Reddit Coolguides](https://www.reddit.com/r/coolguides/comments/qmgm75/git_and_github_cheat_sheet/)
+
+* [Reddit Git](https://www.reddit.com/r/git/comments/5m5fdz/git_cheat_sheet/)
+
+---
 
 ## Bonus track
 
-No tenía claro al diseñar el taller, el tiempo que nos tomaría, dado que no sabía si esto iba a ser un taller en que nos íbamos a ensuciar las manos o si iba a ser más bien una charla introductoria/demostrativa.
+¿Sobró tiempo?
 
-Si estamos viendo esto, es porque sobró tiempo ;)
-
-- .gitignore
-- configuración: alias
-- tagueado
-- mergetool
+* `.gitignore`
+* configuración: aliases
+* configuración: usuario GitHub
+* `tag`
+* `mergetool`
+* `stash`
+* `rebase`
+* `blame`
+* `show`
+* `revert`
 
 ---
 <!-- _class: title-center -->
