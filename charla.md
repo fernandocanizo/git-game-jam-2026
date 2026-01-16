@@ -411,8 +411,6 @@ No uso. Pero hay mogollón.
 
 ## Bonus track
 
-¿Sobró tiempo?
-
 * `.gitignore`
 * configuración: aliases
 * configuración: usuario GitHub
