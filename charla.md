@@ -293,7 +293,7 @@ El hash SHA es la firma criptográfica del commit e incluye:
 
 * `git branch`
 * `git branch -c [base] <new branch>` and `git checkout <new branch>`
-* `git checkout -b mi-rama`
+* `git checkout -b mi-rama` (topic branch / temática)
 * `git branch`
 * `vi tres`
 * `git add tres`
