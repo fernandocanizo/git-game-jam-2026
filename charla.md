@@ -53,7 +53,7 @@ style: |
 
 ---
 
-## Más sencillo
+### Más sencillo
 
 Git es una máquina del tiempo.
 
@@ -120,7 +120,7 @@ El control de versiones registra metainformación, por ejemplo:
 * Respaldo automático
 
 ---
-## ¿Para qué se puede usar git?
+## ¿Para qué se puede usar git? (1)
 
 * **PARA TODO**
 * guardar la configuración de mi entorno de shell y de algunas aplicaciones del mismo
@@ -132,7 +132,7 @@ El control de versiones registra metainformación, por ejemplo:
 * repositorio de tips sobre comandos que uso con poca regularidad
 
 ---
-## Continuación...
+## ¿Para qué se puede usar git? (2)
 
 * registro de libros que leo
 * registro de mis claves usando la herramienta `pass`
