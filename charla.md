@@ -349,6 +349,19 @@ El hash SHA es la firma criptográfica del commit e incluye:
 
 ---
 
+## Archivos binarios
+
+- ver espacio usado por el proyecto
+- agregar un archivo binario al directorio de trabajo
+- ver espacio usado por el proyecto
+- commitear
+- ver espacio usado por el proyecto
+- modificar imagen
+- commitear
+- ver espacio usado por el proyecto
+
+---
+
 ## Trabajo en equipo (Parte 2?)
 
 ### [GitHub](https://github.com/)
