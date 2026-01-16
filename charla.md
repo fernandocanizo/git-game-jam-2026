@@ -337,13 +337,12 @@ El hash SHA es la firma criptográfica del commit e incluye:
 ## Deshacer cosas
 
 * `git commit --amend`
-* `git restore`
-* `git reset`
+* `git reset` / `git restore`
 * para cambios staged:
   `git reset HEAD [archivo]` / `git restore --staged <archivo>`
 * para cambios aún no staged:
-  `git checkout -- <archivo>` / `git restore <archivo>`
-* tirar los últimos cambios a la basura:
+  `git checkout <archivo>` / `git restore <archivo>`
+* tirar los últimos cambios a la basura (staged o no): 
   `git reset --hard HEAD`
 
 ---
