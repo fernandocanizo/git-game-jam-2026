@@ -364,19 +364,27 @@ Versión ultra-resumida e incompleta.
 
 ### Alternativas a GitHub
 
-* [GitLab](https://about.gitlab.com/)
-  Open source, se puede instalar localmente, hay imágenes Docker
+* [GitLab](https://about.gitlab.com/): Open source, self-hosted, Docker.
 
-* [BitBucket](https://bitbucket.org/)
+* [BitBucket](https://bitbucket.org/): Atlassian. Jira/Trello.
+
+* [Gitea](https://about.gitea.com/): Self-hosted.
+
+* [SourceHut](https://sourcehut.org/): Choose-your-tool.
+
+* [CodeBerg](https://codeberg.org/): Gratis. Community-driven. Requiere open-source.
+
+* [Forgejo](https://forgejo.org/): Self-hosted. Obviamente, podés usar licencias privativas.
 
 ---
+
 ## Recursos de aprendizaje
 
 * `git help`, `git help <command>`
 
 * [Manual](https://git-scm.com/docs/user-manual)
 
-* [Pro Git Book](https://git-scm.com/book/en/v2) por Scot Chacon y Ben Straub, editorial Apress, bajo una licencia Creative Commons que permite compartirlo y adaptarlo.
+* [Pro Git Book](https://git-scm.com/book/en/v2) por Scot Chacon y Ben Straub, editorial Apress, Creative Commons.
 
 * [Manual en castellano](https://desarrolloweb.com/manuales/manual-de-git.html)
   No lo he usado, leí los contenidos, se ve piola.
