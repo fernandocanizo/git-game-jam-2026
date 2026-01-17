@@ -23,6 +23,12 @@ style: |
 ---
 <!-- _class: title-center -->
 
+# ~~Taller~~ Charla introductoria a ~~de~~ git
+# ~~para videojuegos~~
+
+---
+<!-- _class: title-center -->
+
 ## Por Fernando L. Canizo (aka Conan)
 
 ![qr-code](./img/talk-repo-qr-code.png)
@@ -177,62 +183,6 @@ ___
 
 ---
 
-## Manos a la obra
-
-### Convención
-
-* `comando <archivo>` ⟶  **parámetro requerido**
-* `comando [archivo]` ⟶  **parámetro optativo**.
-
----
-
-### Instalación
-
-Nope!
-
----
-
-### Configuración
-
-```
-git config --global user.name "Tu nombre"
-git config --global user.email "ejemplo@email.com"
-```
-
----
-
-### Dos maneras de iniciar un repositorio
-
-* `git clone <uri>`
-* `mkdir taller-git; cd taller-git; git init`
-
----
-
-### Agregar archivos, ver estado
-
-* `vi uno` # editamos...
-* `git add uno`
-* `git status`
-* `git commit`
-* `git status`
-
----
-
-### Ver cambios no comiteados
-
-* `vi uno`
-* `git status`
-* `git diff`
-
----
-
-### Atajo para decidir que incluir
-
-* `git commit -p`
-* `git commit -p [archivo] [...]`
-
----
-
 ### Importancia del nombrado de commits
 
 * ver coloreado en Neovim al commitear
@@ -244,34 +194,15 @@ git config --global user.email "ejemplo@email.com"
 
 ---
 
-### ¿Qué hemos hecho?
-
-* `git log`
-* ver archivos involucrados: `git log --raw --no-merges` (`list-changes`)
-* `git log -p`
-* versión reducida: `git log --oneline`
-
----
-
 ### ¿Qué son esos numerazos?
 
-El hash SHA es la firma criptográfica del commit e incluye:
+El hash **sha1sum** es la firma criptográfica del commit e incluye:
 
 * el contenido del commit (los cambios)
 * el mensaje del commit
 * los commits padres hasta el inicio de la historia
 * el timestamp
 * algunos metadatos (cuyos detalles no conozco)
-
----
-
-### Veamos los cambios ocurridos en un sólo archivo
-
-* `vi dos`
-* `git add dos`
-* `git commit`
-* `git log -p`
-* `git log -p uno`
 
 ---
 
@@ -286,51 +217,6 @@ El hash SHA es la firma criptográfica del commit e incluye:
 * experimentar sin riesgo
 * trabajar en una característica sin afectar el funcionamiento actual del proyecto
 * permitir que varias personas trabajen a la vez
-
----
-
-### Ramas: ¿cómo?
-
-* `git branch`
-* `git branch -c [base] <new branch>` and `git checkout <new branch>`
-* `git checkout -b mi-rama` (topic branch / temática)
-* `git branch`
-* `vi tres`
-* `git add tres`
-* `git commit`
-* `git log`
-
----
-
-### Ramas: integrar todos los cambios de una rama
-
-* `git checkout main`
-* `git log`
-* `git merge mi-rama`
-* `git log`
-
----
-
-### Ramas: eliminar
-
-* Si no hay cambios no mergeados: `git branch -d mi-rama`
-* Si queremos forzar descarte: `git branch -D mi-rama`
-
----
-
-### Ramas: incorporar sólo algunos cambios de otra rama
-
-* `git checkout -b otra-rama`
-* `touch cuatro cinco seis`
-* `git add cuatro`
-* `git commit`
-* `git add cinco`
-* `git commit`
-* `git add seis`
-* `git commit`
-* `git log`
-* `git checkout main`
-* `git cherry-pick <sha copiado de git log>`
 
 ---
 
@@ -359,21 +245,6 @@ El hash SHA es la firma criptográfica del commit e incluye:
 - modificar imagen
 - commitear
 - ver espacio usado por el proyecto
-
----
-
-## Trabajo en equipo (Parte 2?)
-
-### [GitHub](https://github.com/)
-
-Versión ultra-resumida e incompleta.
-
-* `git clone <uri>`
-* `git checkout dev`
-* `git pull` (`fetch` ?)
-* `git checkout -b nueva-rama-x`
-* work, work, work..., commit, add...
-* `git push`
 
 ---
 
@@ -421,20 +292,6 @@ No uso. Pero hay mogollón.
 * [Reddit Coolguides](https://www.reddit.com/r/coolguides/comments/qmgm75/git_and_github_cheat_sheet/)
 
 * [Reddit Git](https://www.reddit.com/r/git/comments/5m5fdz/git_cheat_sheet/)
-
----
-
-## Bonus track
-
-* `.gitignore`
-* configuración: aliases
-* configuración: usuario GitHub
-* `tag`
-* `mergetool` (`meld`)
-* `stash`
-* `rebase`
-* `blame`
-* `show`
 
 ---
 <!-- _class: title-center -->
