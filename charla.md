@@ -430,7 +430,7 @@ No uso. Pero hay mogollón.
 * configuración: aliases
 * configuración: usuario GitHub
 * `tag`
-* `mergetool`
+* `mergetool` (`meld`)
 * `stash`
 * `rebase`
 * `blame`
